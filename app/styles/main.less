@@ -1,45 +1,51 @@
 @niceBlue: #86CEDC;
 @bgColor: #F3F2F8;
 
-html{
-	width: 100%;
-	height: 100%;
+html {
+  width: 100%;
+  height: 100%;
 }
-body{
-	height: 100%;
-	width: 100%;
+body {
+  height: 100%;
+  width: 100%;
 }
 
+/* vertical zone */
+.vertical-zone {
+  float: left;
+  display: block;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 2% 0;
+}
 
-#main-content{
-	padding: 0;
-	height: 100%;
-	width: 100%;
-	aside.left{
-		float: left;
-		width: 18%;
-		height: 100%;
-		background-color: @niceBlue;
-		box-sizing: border-box;
-		padding: 4% 0;
-		section{
-			&.logo-zone{
-				width: 100%;
-				box-sizing: border-box;
-				text-align: center;
-				img{
-					background-color: #fff;
-					border-radius: 50%;
-					width: 128px;
-					height: 128px;
-				}
-			}
-		}
-	}
-	article{
-		float: left;
-		width: 82%;
-		height: 100%;
-		background-color: @bgColor;
-	}
+/* logo zone */
+.logo {
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  .logo-img {
+    background-color: darken(@niceBlue, 10%);
+    padding: 2%;
+    box-shadow: inset 0 0 16px rgba(0,0,0,.5);
+    width: 128px;
+    height: 128px;
+  }
+}
+
+#main-content {
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  aside {
+    width: 18%;
+    background-color: @niceBlue;
+    padding: 4% 0;
+  }
+  article {
+    float: left;
+    width: 82%;
+    height: 100%;
+    background-color: @bgColor;
+  }
 }
